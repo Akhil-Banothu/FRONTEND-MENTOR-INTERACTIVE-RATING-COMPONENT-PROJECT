@@ -1,0 +1,155 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Overpass', sans-serif;
+   width: 100%;
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   background-color: hsl(216, 12%, 8%);
+}
+
+
+.mainContainer {
+   width: 23%;
+   background-color: hsla(213, 20%, 18%, 0.466);
+   padding: 30px;
+   border-radius: 30px;
+}
+
+.firstImageContainer {
+   background-color: hsla(217, 10%, 25%, 0.462);
+   width: 45px;
+   height: 45px;
+   display: grid;
+   place-items: center;
+   border-radius: 50%;
+   margin-bottom: 30px;
+}
+
+.image1 {
+   width: 15px;
+   height: 15px;
+}
+
+.perform {
+   color: hsl(0, 8%, 93%);
+   font-size: 27px;
+   margin: 20px 0px;
+}
+
+.feedback {
+   color: hsl(217, 12%, 63%);
+   font-size: 16px;
+   word-spacing: 3px;
+   line-height: 25px;
+}
+
+.rating {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: hsl(217, 12%, 63%);
+   font-size: 18px;
+   margin: 30px 0px;
+}
+
+.common{
+   width: 50px;
+   height: 50px;
+   display: grid;
+   place-items: center;
+   border-radius: 50%;
+   background-color: hsla(217, 10%, 25%, 0.462);
+}
+
+.common:hover {
+   background-color: hsl(217, 12%, 63%);
+   color: hsl(0, 8%, 93%);
+}
+
+.special {
+   background-color: hsl(217, 12%, 63%);
+   color: hsl(0, 8%, 93%);
+}
+
+.waste {
+   cursor: pointer;
+}
+
+.button1 {
+   width: 100%;
+   color: hsl(0, 8%, 93%);
+   background-color: hsl(25, 97%, 53%);
+   height: 50px;
+   font-size: 16px;
+   border: none;
+   border-radius: 50px;
+   letter-spacing: 3px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.button1:hover {
+   background-color: hsl(0, 0%, 100%);
+   color: hsl(25, 97%, 53%);
+}
+
+.mainContainer2 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 50px;
+}
+
+.secondImageContainer {
+   display: flex;
+}
+
+.image2 {
+   margin: auto;
+}
+
+.score {
+   background-color: hsl(213, 19%, 18%);
+   text-align: center;
+   color:hsl(25, 97%, 53%);
+   font-size: 17px;
+   width: 60%;
+   margin: 30px auto;
+   border-radius: 20px;
+   padding: 8px;
+}
+
+.greet {
+   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+   .mainContainer {
+      width: 90%;
+   }
+
+   .feedback {
+      font-size: 13px;
+   }
+
+   .common {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+   }
+
+   .score {
+      width: 85%;
+   }
+}
+
+.hide {
+   display: none;
+}

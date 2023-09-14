@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- font style links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <main class="mainContainer" id="mainContainer1">
+    <div class="firstImageContainer">
+      <img src="./images/icon-star.svg" class="image1">
+    </div>
+
+    <h2 class="perform">How did we do?</h2>
+
+    <p class="feedback">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div class="rating">
+      <div class="common one waste" onclick="displayContent(1, this)">1</div>
+      <div class="common two waste" onclick="displayContent(2, this)">2</div>
+      <div class="common three waste" onclick="displayContent(3, this)">3</div>
+      <div class="common four waste" onclick="displayContent(4, this)">4</div>
+      <div class="common five waste" onclick="displayContent(5, this)">5</div>
+    </div>
+
+    <button class="button1" id="button1">Submit</button>
+  </main>
+
+  <main class="mainContainer2 mainContainer hide" id="mainContainer2">
+    <div class="secondImageContainer">
+      <img src="./images/illustration-thank-you.svg" class="image2">
+    </div>
+    <div class="score" id="displayContent"></div>
+    <h2 class="perform greet">Thank you!</h2>
+    <p class="feedback greet">
+      We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+    </p>
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
